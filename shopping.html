@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Lists</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <main class="content-container">
+        <h1 class="title">My Shopping Lists</h1>
+        <p class="subtitle">Organize your shopping by category.</p>
+
+        <div class="card">
+            <canvas id="shopping-chart"></canvas>
+        </div>
+
+        <div class="card" id="groceries-list">
+            <h2>Groceries</h2>
+            <button class="button clear-list-btn">Clear List</button>
+            <div class="list-items-container">
+                </div>
+            <div class="add-item-row">
+                <input type="text" class="input-field new-item-input" placeholder="Add a new item...">
+                <button class="button add-item-btn">Add</button>
+            </div>
+        </div>
+
+        <div class="card" id="supplies-list">
+            <h2>Supplies</h2>
+            <button class="button clear-list-btn">Clear List</button>
+            <div class="list-items-container"></div>
+            <div class="add-item-row">
+                <input type="text" class="input-field new-item-input" placeholder="Add a new item...">
+                <button class="button add-item-btn">Add</button>
+            </div>
+        </div>
+
+        <div class="card" id="treat-yoself-list">
+            <h2>TreatYoSelf</h2>
+            <button class="button clear-list-btn">Clear List</button>
+            <div class="list-items-container"></div>
+            <div class="add-item-row">
+                <input type="text" class="input-field new-item-input" placeholder="Add a new item...">
+                <button class="button add-item-btn">Add</button>
+            </div>
+        </div>
+
+        <div class="card" id="gifts-list">
+            <h2>Gifts</h2>
+            <button class="button clear-list-btn">Clear List</button>
+            <div class="list-items-container"></div>
+            <div class="add-item-row">
+                <input type="text" class="input-field new-item-input" placeholder="Add a new item...">
+                <button class="button add-item-btn">Add</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/shopping.js"></script>
+
+</body>
+</html>

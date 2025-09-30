@@ -1,0 +1,231 @@
+/* General Body and Page Layout */
+html {
+    scroll-behavior: smooth;
+    background-color: #0d1a26;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1a26;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page wrapper for content */
+.page-wrapper {
+    width: 100%;
+    max-width: 900px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+/* Navigation header */
+.nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header-text-container {
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+/* Back Button Styles */
+.back-button {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content Container */
+.content-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+/* Headings and Subtitle */
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #a0aec0;
+    margin-bottom: 30px;
+}
+
+/* The core glassmorphism effect */
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Typography inside the card */
+.daily-heading {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input container for aligning inputs */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+/* Styling for text input fields */
+.form-input {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    min-width: 0;
+}
+
+.form-input:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Style for the 'Add Exercise' and 'Clear' buttons */
+.cta-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* New Golf Trainer-specific styles */
+.drill-category-heading {
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.drill-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.drill-item h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.drill-item p {
+    font-size: 0.95em;
+    color: #a0aec0;
+    margin-top: 5px;
+}
+
+.planner-list p {
+    text-align: left;
+    font-size: 1em;
+    color: #a0aec0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.journal-entry-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.journal-entry-item h4 {
+    font-size: 1.2em;
+}
+
+.entry-date {
+    font-size: 0.8em;
+    color: #a0aec0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.journal-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#journal-form textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
